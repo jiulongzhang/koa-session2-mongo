@@ -1,0 +1,12 @@
+{
+  "name": "koa-session2-mongo",
+  "version": "0.0.1",
+  "description": "koa-session2-mongo",
+  "main": "index.js",
+  "author": "J <jiulong78@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
