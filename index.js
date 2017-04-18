@@ -13,7 +13,7 @@ class MongoStore extends Store {
         this.init(opts);
     }
 
-    async init({url, options, collection = "__session", maxAge = 2 * 24 * 3600}) {
+    async init({url, options, collection = "__session", maxAge = 10 * 24 * 3600}) {
         try {
             this.db = await mongod.MongoClient.connect(url, options);
             this.coll = await this.db.collection(collection);
