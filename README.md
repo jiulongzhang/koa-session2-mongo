@@ -14,10 +14,9 @@ const Koa = require("koa");
 const session = require("koa-session2");
 const MongoStore = require("koa-session2-mongo");
 const app = new Koa();
-app.use(session({
-     key: "SESSIONID",   //default "koa:sess"
+app.use(session({     
     store: new MongoStore({
-        url:  DB_URL
+        url:  DB_URL  // your mongodb url  required
     })
 }));
 
@@ -25,5 +24,5 @@ app.use(session({
 
 ## Options
 - `url`:   db url (required)
-- `collection`: db session collection name
-- `maxAge`: expire time (second)
+- `collection`: db session collection name,default  "__session"
+- `maxAge`: expire time (second), default 10*24*3600
