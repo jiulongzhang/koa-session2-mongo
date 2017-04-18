@@ -3,10 +3,14 @@ mongodb store for koa-session2
 
 
 ## Require
+
 node v7.x +
 
 ## Install
+```
 npm install koa-session2-mongo
+
+```
 
 ## Usage
 ```js
@@ -25,4 +29,4 @@ app.use(session({
 ## Options
 - `url`:   db url (required)
 - `collection`: db session collection name,default  "__session"
-- `maxAge`: expire time (second), default 10 \* 24 \* 3600
+- `maxAge`: expire time (second), default 10 \* 24 \* 3600 seconds
