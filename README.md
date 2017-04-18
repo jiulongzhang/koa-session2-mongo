@@ -27,6 +27,6 @@ app.use(session({
 ```
 
 ## Options
-- `url`:   db url (required)
-- `collection`: db session collection name,default  "__session"
-- `maxAge`: expire time (second), default 10 \* 24 \* 3600 seconds
+- `url`:  required, db url   
+- `collection`: optional, db session collection name,default  "__session"
+- `maxAge`: optional, expire time, default 10 \* 24 \* 3600 seconds
