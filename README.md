@@ -1,6 +1,7 @@
 # koa-session2-mongo
 mongodb store for koa-session2 
 
+only for mongodb native driver 2.x,   3.x move to https://github.com/jiulongzhang/koa-session2-mongostore
 
 ## Require
 
